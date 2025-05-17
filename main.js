@@ -251,7 +251,7 @@ document.querySelector('.btn-button1').addEventListener('click', function () {
     }
 
 // Validación de inicio de sesion
-    document.getElementById('.btn-button3').addEventListener('click', function(event) {
+    document.getElementById('.btn-button3').addEventListener('click', function() {
     event.preventDefault();
     login();
     });
