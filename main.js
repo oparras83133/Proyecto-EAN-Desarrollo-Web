@@ -239,6 +239,10 @@ document.querySelector('.btn-button1').addEventListener('click', function () {
   document.getElementById('inicia-sesion').style.display = 'block';
 });
 
+// Mostrar sección quienes somos
+document.getElementById('quienessomos').onclick = function() {
+        document.getElementById('seccion-quienes-somos').style.display = 'block';
+});
 
  function login() {
   var usuario = document.getElementById('usuario').value;
