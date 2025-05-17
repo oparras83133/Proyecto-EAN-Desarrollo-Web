@@ -237,5 +237,8 @@ document.querySelector('.btn-button1').addEventListener('click', function () {
   ocultarTodasLasSecciones();
     formRegistro.style.display = 'none';
   document.getElementById('inicia-sesion').style.display = 'block';
+
+  // Mostrar mensaje de inicio de sesion exitoso
+  mensajeExito.style.display = 'block';
 });
   
