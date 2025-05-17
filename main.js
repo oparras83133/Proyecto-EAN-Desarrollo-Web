@@ -121,6 +121,7 @@ function mostrarPaginaPrincipal() {
   document.getElementById('seccion-zapatos').style.display = 'none';
   document.getElementById('seccion-accesorios').style.display = 'none';
   document.getElementById('seccion-publicar').style.display = 'none';
+  document.getElementById('inicia-sesion').style.display = 'none';
 }
 
 function mostrarSeccion(seccion) {
@@ -211,6 +212,7 @@ const formRegistro = document.getElementById('form-registro');
 const mensajeExito = document.getElementById('mensaje-exito');
 const seccionRegistro = document.getElementById('seccion-registro');
 const paginaPrincipal = document.getElementById('pagina-principal');
+const paginaPrincipal = document.getElementById('inicia-sesion');
 
 formRegistro.addEventListener('submit', function(event) {
   event.preventDefault();
