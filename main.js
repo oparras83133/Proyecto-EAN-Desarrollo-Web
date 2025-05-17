@@ -121,6 +121,7 @@ function mostrarPaginaPrincipal() {
   document.getElementById('seccion-zapatos').style.display = 'none';
   document.getElementById('seccion-accesorios').style.display = 'none';
   document.getElementById('seccion-publicar').style.display = 'none';
+    document.getElementById('quienes-somos').style.display = 'none';
 }
 
 function mostrarSeccion(seccion) {
