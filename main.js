@@ -240,7 +240,7 @@ document.querySelector('.btn-button1').addEventListener('click', function () {
 });
 
 
- function login() 
+ function login() {
   var usuario = document.getElementById('usuario').value;
   var contraseña = document.getElementById('contraseña').value;
   if (usuario == "ean@universidadean.edu.co" && contraseña == "EAN") {
@@ -249,6 +249,7 @@ document.querySelector('.btn-button1').addEventListener('click', function () {
   } else {
     alert("Usuario o contraseña incorrectos");
     }
+}
 
 // Validación de inicio de sesion
     document.getElementById('.btn-button3').addEventListener('click', function() {
