@@ -238,3 +238,20 @@ document.querySelector('.btn-button1').addEventListener('click', function () {
   ocultarTodasLasSecciones();
   document.getElementById('inicia-sesion').style.display = 'block';
 });
+
+
+ function login() 
+  var usuario = document.getElementById('usuario').value;
+  var contraseña = document.getElementById('contraseña').value;
+  if (usuario == "ean@universidadean.edu.co" && contraseña == "EAN") {
+        // Mostrar mensaje de inicio sesion exitosa
+          mensajeSesion.style.display = 'block';
+  } else {
+    alert("Usuario o contraseña incorrectos");
+    }
+
+// Validación de inicio de sesion
+    document.getElementById('.btn-button3').addEventListener('click', function(event) {
+    event.preventDefault();
+    login();
+    });
