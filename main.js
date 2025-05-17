@@ -202,6 +202,12 @@ document.querySelector('.btn-button2').addEventListener('click', function () {
   document.getElementById('seccion-registro').style.display = 'block';
 });
 
+// Mostrar sección de inicio de sesion
+document.querySelector('.btn-button1').addEventListener('click', function () {
+  ocultarTodasLasSecciones();
+  document.getElementById('inicia-sesion').style.display = 'block';
+});
+
 // Función para ocultar todas las secciones
 function ocultarTodasLasSecciones() {
   const secciones = document.querySelectorAll('main section');
