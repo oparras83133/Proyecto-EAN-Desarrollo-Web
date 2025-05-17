@@ -240,13 +240,4 @@ document.querySelector('.btn-button1').addEventListener('click', function () {
 });
 
 
-// Validación de inicio de sesion
- function login() 
-  var usuario = document.getElementById('usuario').value;
-  var contraseña = document.getElementById('contraseña').value;
-  if (usuario == "EAN" && contraseña == "EAN") {
-        // Mostrar mensaje de inicio sesion exitosa
-          mensajeSesion.style.display = 'block';
-  } else {
-    alert("Usuario o contraseña incorrectos");
-});
+
