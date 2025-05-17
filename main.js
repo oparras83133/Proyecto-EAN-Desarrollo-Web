@@ -240,4 +240,12 @@ document.querySelector('.btn-button1').addEventListener('click', function () {
      // Mostrar mensaje de inicio sesion exitosa
   mensajeSesion.style.display = 'block';
 });
-  
+
+
+// Validación de inicio de sesion
+document.querySelector('.btn-button1').addEventListener('click', function () {
+  ocultarTodasLasSecciones();
+  document.getElementById('inicia-sesion').style.display = 'block';
+     // Mostrar mensaje de inicio sesion exitosa
+  mensajeSesion.style.display = 'block';
+});
