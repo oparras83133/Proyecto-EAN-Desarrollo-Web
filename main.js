@@ -211,7 +211,6 @@ const formRegistro = document.getElementById('form-registro');
 const mensajeExito = document.getElementById('mensaje-exito');
 const seccionRegistro = document.getElementById('seccion-registro');
 const paginaPrincipal = document.getElementById('pagina-principal');
-const mensajeSesion = document.getElementById('mensaje-inicio-sesion');
 
 formRegistro.addEventListener('submit', function(event) {
   event.preventDefault();
@@ -238,8 +237,5 @@ document.querySelector('.btn-button1').addEventListener('click', function () {
   ocultarTodasLasSecciones();
     formRegistro.style.display = 'none';
   document.getElementById('inicia-sesion').style.display = 'block';
-
-  // Mostrar mensaje de inicio de sesion exitoso
-  mensajeSesion.style.display = 'block';
 });
   
