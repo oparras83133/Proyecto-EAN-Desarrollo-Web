@@ -236,7 +236,6 @@ formRegistro.addEventListener('submit', function(event) {
 // Mostrar sección de inicio de sesion
 document.querySelector('.btn-button1').addEventListener('click', function () {
   ocultarTodasLasSecciones();
-    formRegistro.style.display = 'none';
   document.getElementById('inicia-sesion').style.display = 'block';
      // Mostrar mensaje de inicio sesion exitosa
   mensajeSesion.style.display = 'block';
