@@ -239,6 +239,6 @@ document.querySelector('.btn-button1').addEventListener('click', function () {
   document.getElementById('inicia-sesion').style.display = 'block';
 
   // Mostrar mensaje de inicio de sesion exitoso
-  mensajeExito.style.display = 'block';
+  mensajeiniciosesion.style.display = 'block';
 });
   
