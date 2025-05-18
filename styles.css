@@ -6,106 +6,100 @@
     box-sizing: border-box;
 }
 
-/*selecciona todo de la página web*/
+/*selecciona todo el contenido de la página web*/
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .container{
     display: flex;  
 }
-/* Estilos de la barra lateral */
+
+/*Contenido de la barra lateral */
 .sidebar {
-    background-color: white;
-    width: 300px;
     padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
 }
 
 .sidebar .logo {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
-    font-size: 30px;
-    
-}
-.sidebar .logo h2 {
-    font-family: 'Kaushan Script', cursive; /* Aplica la fuente Kaushan Script */
-    margin-left: 10px; /* Espacio entre el logo y el texto */
-    color: #286484;
-}
-.sidebar .logo img {
-    width: 70px;
-    margin-right: 10px;
+    margin-bottom: 20px;   
 }
 
-.sidebar .search-bar {
-    margin-bottom: 20px;
-    width: 100%;
+.sidebar .logo h2 {
+    font-family: 'Kaushan Script', cursive;
+    margin-left: 10px;
+    color: #286484;
+}
+
+.sidebar .logo img {
+    width: 70px;
 }
 
 /*input buscar*/
+.sidebar .search-bar {
+    margin-bottom: 20px;
+}
+
 .sidebar .search-bar input[type="text"] {
-    width: calc(100% - 20px);
     padding: 10px;
     text-indent: 1.5em;
-    border: 1px solid #ccc;
+    border: 1px solid #286484;
     border-radius: 5px;
     width: 100%;
 }
 
+/*ícono lupa*/
 .search-bar {
     position: relative;   
 }
 
-/*ícono lupa*/
 .search-bar i.fa-magnifying-glass {
     position: absolute;
     left: 10px;
     top: 50%;
     transform: translateY(-50%);
-    color: #999;
+    color: #286484;
+    cursor: pointer;
 }
 
-li{
-    padding-top: 10px;
-    padding-bottom: 10px;
-    display:contents;    
+.filtro {
+    display: none;
 }
+
+/*elementos del menú*/
+li{
+    padding-bottom: 10px;
+    display:contents;      
+}
+
 .sin-sangria{
     margin-left: 0;
     padding-left: 0; 
 }
-.sin-vinetas {
-  list-style-type: none; 
-}
-    
+
 .no-underline{
-    position: relative;
     text-decoration: none;
-    color: black;
+    color: #286484;
     padding: 10px;
-    border: 1px solid #999;
+    border: 1px solid #286484;
     border-radius: 5px;      
     width: 100%;             
-    display:inline-block;          
-    box-sizing: border-box; 
+    display: inline-block; 
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
 .no-underline i {
-    margin-right: 0.5em;
+    margin-right: 0.5em; 
 }
 
-/* Estilos del contenido principal */
+/*Contenido lado derecho de la pantalla principal*/
 .content{
     background-image: linear-gradient(#6c9c7c, #286484);
-    align-items: center;
-
 }
+
 .main-header{
-    flex-direction:column;
     padding-top: 50px;
     padding-bottom: 50px;
     margin-left: 30px;
@@ -113,9 +107,17 @@ li{
 
 }
 .content .main-header h1 {
-    font-family: 'Kaushan Script', cursive; /* Aplica la fuente Kaushan Script */
+    font-family: 'Kaushan Script', cursive;
     font-size: 50px;
 }
+
+.content .main-header p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-style: italic;
+}
+
+/*Botones*/
 .btn-button1{
     background-color: #0d6efd;
     border: 2px solid #0d6efd;
@@ -132,33 +134,111 @@ li{
     padding: 10px;
     font-weight:100; 
 }
-/* Estilos de la sección de publicaciones */
-.publications {
+.btn-button3{
+    background-color: #0d6efd;
+    border: 2px solid #0d6efd;
+    color: white;
+    border-radius: 3px;  
+    padding: 10px;
+    margin-right: 10px;
+}
+.btn-button4{
+    position: relative;
+    text-decoration: none;
+    color: #286484;
+    padding: 10px;
+    border: 1px solid #286484;
+    border-radius: 5px;      
+    width: 100%;             
+    display:inline-block;          
+    box-sizing: border-box; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    background-color: white;
+}
+
+.btn-button4 i{
+    margin-right: 0.5em;
+}
+
+.btn-button5{
+    position: relative;
+    text-decoration: none;
+    color: #286484;
+    padding: 10px;
+    border: 1px solid #286484;
+    border-radius: 5px;      
+    width: 100%;             
+    display:inline-block;          
+    box-sizing: border-box; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    background-color: white;
+}
+
+.btn-button5 i{
+    margin-right: 0.5em;
+}
+
+.content p{
+    color: white;
+}
+
+.parrafo-publications p{
+    margin-left: 30px;
+}
+
+/*sección de imágenes de publicaciones*/
+.publications{
     display: flex;
-    height: 45%;
     gap: 20px;
     margin-left: 30px;
     margin-right: 30px;
-    font-weight:100; 
+    justify-content: center;
+    padding-bottom: 50px;
 }
 
-.publication-card {
-    border: 2px solid;
-    text-align: center;
+.publications a{
     display: flex;
-    justify-content: center;
-    border-radius: 10px; 
-}
-    
-.img-fluid{
+    height: 250px;
+} 
+
+.publication-card .img-fluid{
     width: 200px;
     border-radius: 10px; 
 }
 
+/*Contenido Información legal*/
+.info-box{
+    align-content: center;
+    text-align: left;
+}
+
+.info-box h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #286484;
+}
+
+.info-box p a{
+    color: #286484;
+}
+
+.imageSostenibilidad{
+  align-content: center;
+} 
+
+.modal-body h3{
+    text-align: center;
+}
+
+/*Sección pie de página*/
 .mobile-footer{
     text-align: center;
     justify-content: center;
 }
+
 .mobile-footer h3 {
     font-family: 'Kaushan Script', cursive;
     color: #286484;

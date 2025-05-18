@@ -1,3 +1,72 @@
+//función buscar para filtrar el texto con el alt de las imágenes
+document.addEventListener("DOMContentLoaded", () => {
+    const searchInput = document.getElementById("searchInput");
+    const searchIcon = document.getElementById("searchIcon");
+    const publicationCards = document.querySelectorAll(".publication-card");
+
+    const buscar = () => {
+        const textoBusqueda = searchInput.value.toLowerCase();
+        publicationCards.forEach(articulo => {
+            const textoContenido = articulo.textContent.toLowerCase();
+            const imagen = articulo.querySelector("img");
+            const textoAlt = imagen ? imagen.alt.toLowerCase() : "";
+
+            if (textoContenido.includes(textoBusqueda) || textoAlt.includes(textoBusqueda)) {
+                articulo.classList.remove("filtro");
+            } else {
+                articulo.classList.add("filtro");
+            }
+        });
+    };
+
+    searchInput.addEventListener("keyup", e => {
+        if (e.key === "Enter") e.target.value = "";
+        buscar();
+    });
+
+    searchIcon.addEventListener("click", () => {
+        buscar();
+        searchInput.focus();
+    });
+});
+
+//función ChangeImage para cambiar las imágenes según onmouseover y onmouseout
+function ChangeImage(x, image){
+  switch (x){
+    case 1:
+      image.src="/images/info-ropa-vestido-rojo.png";
+    break;
+
+    case 2: 
+      image.src="/images/ropa-vestido-rojo.jpg";
+    break;
+
+    case 3:
+      image.src="/images/info-zapatos-cafe-hombre.png";
+    break;
+
+    case 4:
+      image.src="/images/zapatos-cafe-hombre.png";
+    break;
+
+    case 5:
+      image.src="/images/info-accesorio-cinturon-mujer.png";
+    break;
+
+    case 6:
+      image.src="/images/accesorio-cinturon-mujer.jpg";
+    break;
+
+    case 7:
+      image.src="/images/info-ropa-chaqueta-negra-hombre.png";
+    break;
+
+    case 8:
+      image.src="/images/ropa-chaqueta-negra-hombre.png";
+    break;
+  }
+}
+
 function mostrarSeccion(event, id) {
     event.preventDefault(); // evitar que el link haga scroll o cambie URL
     
@@ -121,6 +190,8 @@ function mostrarPaginaPrincipal() {
   document.getElementById('seccion-zapatos').style.display = 'none';
   document.getElementById('seccion-accesorios').style.display = 'none';
   document.getElementById('seccion-publicar').style.display = 'none';
+    document.getElementById('como-funciona').style.display = 'none';
+    document.getElementById('seccion-quienes-somos').style.display = 'none';
 }
 
 function mostrarSeccion(seccion) {
@@ -131,6 +202,8 @@ function mostrarSeccion(seccion) {
   document.getElementById('seccion-zapatos').style.display = (seccion === 'zapatos') ? 'block' : 'none';
   document.getElementById('seccion-accesorios').style.display = (seccion === 'accesorios') ? 'block' : 'none';
   document.getElementById('seccion-publicar').style.display = (seccion === 'publicar') ? 'block' : 'none';
+    document.getElementById('como-funciona').style.display = (seccion === 'publicar') ? 'block' : 'none';
+    document.getElementById('seccion-quienes-somos').style.display = (seccion === 'publicar') ? 'block' : 'none';
 }
 // Manejar envío del formulario
 document.getElementById('form-publicar').addEventListener('submit', function (event) {
@@ -211,6 +284,7 @@ const formRegistro = document.getElementById('form-registro');
 const mensajeExito = document.getElementById('mensaje-exito');
 const seccionRegistro = document.getElementById('seccion-registro');
 const paginaPrincipal = document.getElementById('pagina-principal');
+const mensajeSesion = document.getElementById('mensaje-inicio-sesion');
 
 formRegistro.addEventListener('submit', function(event) {
   event.preventDefault();
@@ -231,3 +305,38 @@ formRegistro.addEventListener('submit', function(event) {
     paginaPrincipal.style.display = 'block';
   }, 3000);
 });
+
+// Mostrar sección de inicio de sesion
+document.querySelector('.btn-button1').addEventListener('click', function () {
+  ocultarTodasLasSecciones();
+  document.getElementById('inicia-sesion').style.display = 'block';
+});
+
+// Mostrar sección como funciona
+document.querySelector('.btn-button4').addEventListener('click', function () {
+  ocultarTodasLasSecciones();
+  document.getElementById('como-funciona').style.display = 'block';
+});
+
+// Mostrar sección quienes somos
+document.querySelector('.btn-button5').addEventListener('click', function () {
+  ocultarTodasLasSecciones();
+  document.getElementById('seccion-quienes-somos').style.display = 'block';
+});
+
+ function login() {
+  var usuario = document.getElementById('usuario').value;
+  var contraseña = document.getElementById('contraseña').value;
+  if (usuario == "ean@universidadean.edu.co" && contraseña == "EAN") {
+        // Mostrar mensaje de inicio sesion exitosa
+          mensajeSesion.style.display = 'block';
+  } else {
+    alert("Usuario o contraseña incorrectos");
+    }
+}
+
+// Validación de inicio de sesion
+    document.getElementById('.btn-button3').addEventListener('click', function() {
+    event.preventDefault();
+    login();
+    });
