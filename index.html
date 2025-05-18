@@ -39,12 +39,12 @@
        
 <aside class="sidebar">
     <div class="logo">
-        <img src="/Images/logo-nextchange.png" alt="Logo NextChange">
+        <img src="/Images/logo-nextchange.png" alt="Logo NextChange" />
         <h2>NextChange</h2>
     </div>
     <div class="search-bar">
         <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Buscar...">
+        <input type="text" placeholder="Buscar..." />
     </div>
     <nav class="menu">
         <ul class="sin-vinetas sin-sangria">
@@ -53,7 +53,6 @@
             <li><a href="#" class="no-underline" onclick="mostrarSeccion('zapatos')"><i class="fa-solid fa-shoe-prints"></i>Zapatos</a></li>
             <li><a href="#" class="no-underline" onclick="mostrarSeccion('accesorios')"><i class="fa-solid fa-ring"></i>Accesorios</a></li>
             <li><a href="#" class="no-underline" onclick="mostrarSeccion('publicar')"><i class="fa-solid fa-bullhorn"></i>¡Publica aquí!</a></li>
-
         </ul>
     </nav>
 </aside>
@@ -79,33 +78,32 @@
         <option value="accesorios">Accesorios</option>
       </select>
     </div>
+
     <div class="mb-3">
-  <label for="usuarioArticulo" class="form-label">Tipo de usuario</label>
-  <select id="usuarioArticulo" class="form-select" required>
-    <option value="" disabled selected>Selecciona una opción</option>
-    <option value="hombre">Hombre</option>
-    <option value="mujer">Mujer</option>
-    <option value="nino">Niño</option>
-  </select>
-</div>
+      <label for="usuarioArticulo" class="form-label">Tipo de usuario</label>
+      <select id="usuarioArticulo" class="form-select" required>
+        <option value="" disabled selected>Selecciona una opción</option>
+        <option value="hombre">Hombre</option>
+        <option value="mujer">Mujer</option>
+        <option value="nino">Niño</option>
+      </select>
+    </div>
 
-<div class="mb-3">
-  <label for="marcaArticulo" class="form-label">Marca</label>
-  <select id="marcaArticulo" class="form-select" required>
-    <option value="" disabled selected>Selecciona una opción</option>
-    <option value="nike">Nike</option>
-    <option value="adidas">Adidas</option>
-    <option value="levis">Levi's</option>
-    <option value="puma">Puma</option>
-    <option value="gucci">Gucci</option>
-    <option value="prada">Prada</option>
-    <option value="prada">Otros
-    <option value="prada">Sin marca</option>
-    </option>
-    <option value="lv">Louis Vuitton</option>
-  </select>
-</div>
-
+    <div class="mb-3">
+      <label for="marcaArticulo" class="form-label">Marca</label>
+      <select id="marcaArticulo" class="form-select" required>
+        <option value="" disabled selected>Selecciona una opción</option>
+        <option value="nike">Nike</option>
+        <option value="adidas">Adidas</option>
+        <option value="levis">Levi's</option>
+        <option value="puma">Puma</option>
+        <option value="gucci">Gucci</option>
+        <option value="prada">Prada</option>
+        <option value="otros">Otros</option>
+        <option value="sin-marca">Sin marca</option>
+        <option value="lv">Louis Vuitton</option>
+      </select>
+    </div>
 
     <div class="mb-3">
       <label for="fotosArticulo" class="form-label">Subir fotos del artículo</label>
@@ -117,7 +115,7 @@
       <textarea class="form-control" id="descripcionArticulo" rows="4" required></textarea>
     </div>
 
-    <hr>
+    <hr />
 
     <h4>Información del vendedor</h4>
 
@@ -127,13 +125,13 @@
     </div>
 
     <div class="mb-3">
-      <label for="contactoVendedor" class="form-label">Correo</label>
-      <input type="text" class="form-control" id="contactoVendedor" placeholder="Correo electrónico" required />
+      <label for="correoVendedor" class="form-label">Correo</label>
+      <input type="email" class="form-control" id="correoVendedor" placeholder="Correo electrónico" required />
     </div>
 
     <div class="mb-3">
-      <label for="contactoVendedor" class="form-label">Número Telefónico</label>
-      <input type="text" class="form-control" id="contactoVendedor" placeholder="teléfono" required />
+      <label for="telefonoVendedor" class="form-label">Número Telefónico</label>
+      <input type="tel" class="form-control" id="telefonoVendedor" placeholder="Teléfono" required />
     </div>
 
     <div class="mb-3">
@@ -157,10 +155,11 @@
         </header>
 
         <section class="publications">
-            <div class="publication-card"><img src="/images/ropa-vestido-rojo.jpg" class="img-fluid"></div>
-            <div class="publication-card"><img src="/images/zapatos-cafe-hombre.png" class="img-fluid"></div>
-            <div class="publication-card"><img src="/images/accesorio-cinturon-mujer.jpg" class="img-fluid"></div>
-            <div class="publication-card"><img src="/images/ropa-chaqueta-negra-hombre.png" class="img-fluid"></div>
+          
+            <div class="publication-card"><img src="/images/ropa-vestido-rojo.jpg" class="img-fluid" alt="Vestido rojo" /></div>
+            <div class="publication-card"><img src="/images/zapatos-cafe-hombre.png" class="img-fluid" alt="Zapatos café hombre" /></div>
+            <div class="publication-card"><img src="/images/accesorio-cinturon-mujer.jpg" class="img-fluid" alt="Cinturón mujer" /></div>
+            <div class="publication-card"><img src="/images/ropa-chaqueta-negra-hombre.png" class="img-fluid" alt="Chaqueta negra hombre" /></div>
         </section>
     </section>
 
@@ -187,10 +186,10 @@
 
         <div class="publications">
             <div class="publication-card" data-usuario="mujer" data-marca="nike">
-                <img src="/images/ropa-vestido-rojo.jpg" class="img-fluid" />
+                <img src="/images/ropa-vestido-rojo.jpg" class="img-fluid" alt="Vestido rojo mujer Nike" />
             </div>
             <div class="publication-card" data-usuario="hombre" data-marca="levis">
-                <img src="/images/ropa-chaqueta-negra-hombre.png" class="img-fluid" />
+                <img src="/images/ropa-chaqueta-negra-hombre.png" class="img-fluid" alt="Chaqueta negra hombre Levi's" />
             </div>
         </div>
     </section>
@@ -218,10 +217,10 @@
 
         <div class="publications">
             <div class="publication-card" data-usuario="hombre" data-marca="nike">
-                <img src="/images/zapatos-cafe-hombre.png" class="img-fluid" />
+                <img src="/images/zapatos-cafe-hombre.png" class="img-fluid" alt="Zapatos café hombre Nike" />
             </div>
-            <div class="publication-card" data-usuario="mujer" data-marca="puma">
-                <img src="/images/zapatos-mujer-verdes.jpg" class="img-fluid" />
+            <div class="publication-card" data-usuario="mujer" data-marca="adidas">
+                <img src="/images/zapatos-negros-mujer.png" class="img-fluid" alt="Zapatos negros mujer Adidas" />
             </div>
         </div>
     </section>
@@ -243,17 +242,6 @@
             <button class="btn btn-outline-secondary filtro-marca" data-marca="gucci">Gucci</button>
             <button class="btn btn-outline-secondary filtro-marca" data-marca="prada">Prada</button>
             <button class="btn btn-outline-secondary filtro-marca" data-marca="lv">Louis Vuitton</button>
-        </div>
-
-        <button class="btn btn-outline-danger mb-3" onclick="limpiarFiltros('accesorios')">Limpiar filtros</button>
-
-        <div class="publications">
-            <div class="publication-card" data-usuario="mujer" data-marca="gucci">
-                <img src="/images/accesorio-cinturon-mujer.jpg" class="img-fluid" />
-            </div>
-            <div class="publication-card" data-usuario="hombre" data-marca="prada">
-                <img src="/images/accesorio-reloj-hombre.jpg" class="img-fluid" />
-            </div>
         </div>
     </section>
 </main>
@@ -305,6 +293,7 @@
         <h3>NextChange</h3>
         <p>Copyright © 2025 All rights reserved</p>
     </footer>
+    </div>
 
     <!--Por favor no quitar-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
