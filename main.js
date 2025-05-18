@@ -212,6 +212,7 @@ const mensajeExito = document.getElementById('mensaje-exito');
 const seccionRegistro = document.getElementById('seccion-registro');
 const paginaPrincipal = document.getElementById('pagina-principal');
 const mensajeSesion = document.getElementById('mensaje-inicio-sesion');
+const mensajeSesion = document.getElementById('como-funciona');
 
 formRegistro.addEventListener('submit', function(event) {
   event.preventDefault();
