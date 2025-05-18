@@ -6,14 +6,16 @@
     box-sizing: border-box;
 }
 
-/*selecciona todo de la página web*/
+/*selecciona todo el contenido de la página web*/
 body{
     font-family: Arial, Helvetica, sans-serif;
 }
+
 .container{
     display: flex;  
 }
-/* Estilos de la barra lateral */
+
+/*Contenido de la barra lateral */
 .sidebar {
     background-color: white;
     width: 300px;
@@ -77,10 +79,7 @@ li{
     margin-left: 0;
     padding-left: 0; 
 }
-.sin-vinetas {
-  list-style-type: none; 
-}
-    
+
 .no-underline{
     position: relative;
     text-decoration: none;
@@ -152,9 +151,14 @@ li{
     box-sizing: border-box; 
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 0.5em;
-        text-align: left;
+    text-align: left;
+    background-color: white;
 }
+
+.btn-button4 i{
+    margin-right: 0.5em;
+}
+
 .btn-button5{
     position: relative;
     text-decoration: none;
@@ -167,9 +171,14 @@ li{
     box-sizing: border-box; 
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 0.5em;
     text-align: left;
+    background-color: white;
 }
+
+.btn-button5 i{
+    margin-right: 0.5em;
+}
+
 /* Estilos de la sección de publicaciones */
 .publications {
     display: flex;
