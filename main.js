@@ -122,6 +122,7 @@ function mostrarPaginaPrincipal() {
   document.getElementById('seccion-accesorios').style.display = 'none';
   document.getElementById('seccion-publicar').style.display = 'none';
     document.getElementById('como-funciona').style.display = 'none';
+    document.getElementById('seccion-quienes-somos').style.display = 'none';
 }
 
 function mostrarSeccion(seccion) {
@@ -133,6 +134,7 @@ function mostrarSeccion(seccion) {
   document.getElementById('seccion-accesorios').style.display = (seccion === 'accesorios') ? 'block' : 'none';
   document.getElementById('seccion-publicar').style.display = (seccion === 'publicar') ? 'block' : 'none';
     document.getElementById('como-funciona').style.display = (seccion === 'publicar') ? 'block' : 'none';
+    document.getElementById('seccion-quienes-somos').style.display = (seccion === 'publicar') ? 'block' : 'none';
 }
 // Manejar envío del formulario
 document.getElementById('form-publicar').addEventListener('submit', function (event) {
