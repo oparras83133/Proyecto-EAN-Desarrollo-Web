@@ -153,6 +153,19 @@ li{
     margin-top: 10px;
     margin-bottom: 10px;
 }
+.btn-button5{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border: 1px solid #999;
+    border-radius: 5px;      
+    width: 100%;             
+    display:inline-block;          
+    box-sizing: border-box; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 /* Estilos de la sección de publicaciones */
 .publications {
     display: flex;
