@@ -242,7 +242,7 @@ document.querySelector('.btn-button1').addEventListener('click', function () {
 // Mostrar sección quienes somos
 document.querySelector('.btn-button4').addEventListener('click', function () {
   ocultarTodasLasSecciones();
-  document.getElementById('seccion-quienes-somos').style.display = 'block';
+  document.getElementById('como-funciona').style.display = 'block';
 });
 
  function login() {
