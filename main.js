@@ -239,8 +239,14 @@ document.querySelector('.btn-button1').addEventListener('click', function () {
   document.getElementById('inicia-sesion').style.display = 'block';
 });
 
-// Mostrar sección quienes somos
+// Mostrar sección como funciona
 document.querySelector('.btn-button4').addEventListener('click', function () {
+  ocultarTodasLasSecciones();
+  document.getElementById('como-funciona').style.display = 'block';
+});
+
+// Mostrar sección quienes somos
+document.querySelector('.btn-button5').addEventListener('click', function () {
   ocultarTodasLasSecciones();
   document.getElementById('como-funciona').style.display = 'block';
 });
