@@ -236,7 +236,7 @@ formRegistro.addEventListener('submit', function(event) {
 // Mostrar sección de inicio de sesion
 document.querySelector('.btn-button1').addEventListener('click', function () {
   ocultarTodasLasSecciones();
-  document.getElementById('como-funciona').style.display = 'block';
+  document.getElementById('inicia-sesion').style.display = 'block';
 });
 
 // Mostrar sección quienes somos
