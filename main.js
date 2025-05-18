@@ -215,7 +215,8 @@ document.getElementById('form-publicar').addEventListener('submit', function (ev
   const fotosInput = document.getElementById('fotosArticulo');
   const descripcion = document.getElementById('descripcionArticulo').value;
   const usuario = document.getElementById('nombreUsuario').value;
-  const contacto = document.getElementById('contactoVendedor').value;
+  const correo = document.getElementById('correoVendedor').value;
+  const telefono = document.getElementById('telefonoVendedor').value;
   const mensaje = document.getElementById('mensajeAdicional').value;
 
   // NUEVOS CAMPOS
@@ -247,7 +248,7 @@ document.getElementById('form-publicar').addEventListener('submit', function (ev
   nuevaPublicacion.setAttribute('data-marca', marcaArticulo);
 
   // Crear un tooltip con la descripción y datos básicos
-  nuevaPublicacion.title = `${nombre}\nTipo: ${tipo}\nDescripción: ${descripcion}\nVendedor: ${usuario}\nContacto: ${contacto}\nMensaje: ${mensaje}\nUsuario Artículo: ${usuarioArticulo}\nMarca: ${marcaArticulo}`;
+  nuevaPublicacion.title = `${nombre}\nTipo: ${tipo}\nDescripción: ${descripcion}\nVendedor: ${usuario}\nCorreo: ${correo}\nTeléfono: ${telefono}\nMensaje: ${mensaje}\nUsuario Artículo: ${usuarioArticulo}\nMarca: ${marcaArticulo}`;
 
   // Agregar a la página principal
   const contenedorPrincipal = document.querySelector('#pagina-principal .publications');
@@ -324,19 +325,19 @@ document.querySelector('.btn-button5').addEventListener('click', function () {
   document.getElementById('seccion-quienes-somos').style.display = 'block';
 });
 
- function login() {
-  var usuario = document.getElementById('usuario').value;
-  var contraseña = document.getElementById('contraseña').value;
-  if (usuario == "ean@universidadean.edu.co" && contraseña == "EAN") {
-        // Mostrar mensaje de inicio sesion exitosa
-          mensajeSesion.style.display = 'block';
-  } else {
-    alert("Usuario o contraseña incorrectos");
-    }
+function login() {
+var usuario = document.getElementById('usuario').value;
+var contraseña = document.getElementById('contraseña').value;
+if (usuario == "ean@universidadean.edu.co" && contraseña == "EAN") {
+      // Mostrar mensaje de inicio sesion exitosa
+        mensajeSesion.style.display = 'block';
+} else {
+  alert("Usuario o contraseña incorrectos");
+  }
 }
 
 // Validación de inicio de sesion
-    document.getElementById('.btn-button3').addEventListener('click', function() {
-    event.preventDefault();
-    login();
-    });
+document.getElementById('.btn-button3').addEventListener('click', function(event) {
+event.preventDefault();
+login();
+});
