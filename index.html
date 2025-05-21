@@ -154,7 +154,7 @@
           <h4>Información del vendedor</h4>
 
           <div class="mb-3">
-            <label for="nombreUsuario" class="form-label">Nombre de usuario</label>
+            <label for="nombreUsuario" class="form-label">Nombre y apellido</label>
             <input type="text" class="form-control" id="nombreUsuario" required>
           </div>
 
@@ -191,18 +191,19 @@
 
           <div class="filtros mb-3">
               <strong>Filtrar por marca:</strong>
-              <button class="btn btn-outline-secondary filtro-marca" data-marca="nike">Nike</button>
-              <button class="btn btn-outline-secondary filtro-marca" data-marca="adidas">Adidas</button>
-              <button class="btn btn-outline-secondary filtro-marca" data-marca="levis">Levi's</button>
+              <button class="btn btn-outline-primary filtro-marca" data-marca="nike">Nike</button>
+              <button class="btn btn-outline-primary filtro-marca" data-marca="adidas">Adidas</button>
+              <button class="btn btn-outline-primary filtro-marca" data-marca="levis">Levi's</button>
+              <button class="btn btn-outline-primary filtro-marca" data-marca="otra">Otra</button>
           </div>
 
           <button class="btn btn-outline-danger mb-3" onclick="limpiarFiltros('ropa')">Limpiar filtros</button>
 
           <div class="publications">
-              <div class="publication-card" data-usuario="mujer" data-marca="nike">
+              <div class="publication-card" data-usuario="mujer" data-marca="otra">
                   <img src="/images/ropa-vestido-rojo.jpg" class="img-fluid" alt="vestido rojo">
               </div>
-              <div class="publication-card" data-usuario="hombre" data-marca="levis">
+              <div class="publication-card" data-usuario="hombre" data-marca="otra">
                   <img src="/images/ropa-chaqueta-negra-hombre.png" class="img-fluid" alt="chaqueta negra">
               </div>
           </div>
@@ -222,19 +223,17 @@
 
           <div class="filtros mb-3">
               <strong>Filtrar por marca:</strong>
-              <button class="btn btn-outline-secondary filtro-marca" data-marca="nike">Nike</button>
-              <button class="btn btn-outline-secondary filtro-marca" data-marca="adidas">Adidas</button>
-              <button class="btn btn-outline-secondary filtro-marca" data-marca="puma">Puma</button>
+              <button class="btn btn-outline-primary filtro-marca" data-marca="nike">Nike</button>
+              <button class="btn btn-outline-primary filtro-marca" data-marca="adidas">Adidas</button>
+              <button class="btn btn-outline-primary filtro-marca" data-marca="puma">Puma</button>
+              <button class="btn btn-outline-primary filtro-marca" data-marca="otra">Otra</button>
           </div>
 
           <button class="btn btn-outline-danger mb-3" onclick="limpiarFiltros('zapatos')">Limpiar filtros</button>
 
           <div class="publications">
-              <div class="publication-card" data-usuario="hombre" data-marca="nike">
-                  <img src="/images/zapatos-cafe-hombre.png" class="img-fluid" alt="zapatos café">
-              </div>
-              <div class="publication-card" data-usuario="mujer" data-marca="puma">
-                  <img src="/images/zapatos-mujer-verdes.jpg" class="img-fluid" alt="zapatos verdes">
+              <div class="publication-card" data-usuario="hombre" data-marca="otra">
+                  <img src="/images/zapatos-cafe-hombre.png" class="img-fluid" alt="zapatos cafés">
               </div>
           </div>
       </section>
@@ -253,9 +252,9 @@
 
           <div class="filtros mb-3">
               <strong>Filtrar por marca:</strong>
-              <button class="btn btn-outline-secondary filtro-marca" data-marca="gucci">Gucci</button>
-              <button class="btn btn-outline-secondary filtro-marca" data-marca="prada">Prada</button>
-              <button class="btn btn-outline-secondary filtro-marca" data-marca="lv">Louis Vuitton</button>
+              <button class="btn btn-outline-primary filtro-marca" data-marca="gucci">Gucci</button>
+              <button class="btn btn-outline-primary filtro-marca" data-marca="prada">Prada</button>
+              <button class="btn btn-outline-primary filtro-marca" data-marca="lv">Louis Vuitton</button>
           </div>
 
           <button class="btn btn-outline-danger mb-3" onclick="limpiarFiltros('accesorios')">Limpiar filtros</button>
@@ -263,9 +262,6 @@
           <div class="publications">
               <div class="publication-card" data-usuario="mujer" data-marca="gucci">
                   <img src="/images/accesorio-cinturon-mujer.jpg" class="img-fluid" alt="cinturón mujer">
-              </div>
-              <div class="publication-card" data-usuario="hombre" data-marca="prada">
-                  <img src="/images/accesorio-reloj-hombre.jpg" class="img-fluid" alt="reloj hombre">
               </div>
           </div>
       </section>
@@ -316,7 +312,7 @@
         <form id="form-inicio-sesion">
           <!-- correo electrónico y contraseña -->
           <div class="mb-3">
-            <label for="usuario" class="form-label">Usuario</label>
+            <label for="usuario" class="form-label">Usuario (correo electrónico)</label>
             <input type="email" class="form-control" id="usuario" required>
           </div>
           <div class="mb-3">
@@ -358,7 +354,7 @@
 
       <!-- Sección Quienes Somos -->
         <section id="seccion-quienes-somos" class="seccion-publicaciones" style="display:none; margin-left: 30px; margin-right: 30px;">
-            <h2>Quienes Somos</h2>
+            <h2>¿Quiénes somos?</h2>
             <p style="margin-top: 90px;">
             Somos una plataforma dedicada al intercambio de prendas usadas, creada para darle una segunda vida a la ropa y reducir el impacto ambiental de la industria textil. Aquí puedes subir las prendas que ya no usas, descubrir piezas únicas de otras personas y hacer intercambios de manera sencilla y segura. Al alargar la vida útil de la ropa, promovemos el consumo consciente, fomentamos la economía circular y contribuimos juntos a un futuro más sostenible. ¡Únete a la comunidad y transforma tu forma de vestir!
             </p>
