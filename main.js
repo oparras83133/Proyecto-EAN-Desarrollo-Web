@@ -34,35 +34,35 @@ document.addEventListener("DOMContentLoaded", () => {
 function ChangeImage(x, image){
   switch (x){
     case 1:
-      image.src="../nextchange/images/info-ropa-vestido-rojo.png";
+      image.src="/images/info-ropa-vestido-rojo.png";
     break;
 
     case 2: 
-      image.src="../nextchange/images/ropa-vestido-rojo.jpg";
+      image.src="/images/ropa-vestido-rojo.jpg";
     break;
 
     case 3:
-      image.src="../nextchange/images/info-zapatos-cafe-hombre.png";
+      image.src="/images/info-zapatos-cafe-hombre.png";
     break;
 
     case 4:
-      image.src="../nextchange/images/zapatos-cafe-hombre.png";
+      image.src="/images/zapatos-cafe-hombre.png";
     break;
 
     case 5:
-      image.src="../nextchange/images/info-accesorio-cinturon-mujer.png";
+      image.src="/images/info-accesorio-cinturon-mujer.png";
     break;
 
     case 6:
-      image.src="../nextchange/images/accesorio-cinturon-mujer.jpg";
+      image.src="/images/accesorio-cinturon-mujer.jpg";
     break;
 
     case 7:
-      image.src="../nextchange/images/info-ropa-chaqueta-negra-hombre.png";
+      image.src="/images/info-ropa-chaqueta-negra-hombre.png";
     break;
 
     case 8:
-      image.src="../nextchange/images/ropa-chaqueta-negra-hombre.png";
+      image.src="/images/ropa-chaqueta-negra-hombre.png";
     break;
   }
 }
